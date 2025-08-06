@@ -8,18 +8,29 @@ links.forEach((link) => {
 });
 // End Active Navbar Links
 
-// Load products from localStorage
-const storedProducts = JSON.parse(localStorage.getItem("products")) || [];
-
 const rowContainer = document.querySelector(".shop .container .row");
 
-if (storedProducts.length > 0) {
+// Load products: First from localStorage, if empty fetch from data.json
+let storedProducts = JSON.parse(localStorage.getItem("products")) || [];
+
+if (storedProducts.length === 0) {
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            storedProducts = data;
+            localStorage.setItem("products", JSON.stringify(storedProducts));
+            renderProducts(storedProducts);
+            renderAddToCartsBtn();
+        })
+        .catch(err => console.error("Error loading data.json:", err));
+} else {
     renderProducts(storedProducts);
     renderAddToCartsBtn();
 }
 
 // Render Products in Shop
 function renderProducts(products) {
+    rowContainer.innerHTML = ""; // Clear old data
     for (let product of products) {
         const card = `
             <div class="col-lg-4 col-md-6">
