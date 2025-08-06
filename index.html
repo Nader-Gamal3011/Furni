@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style File -->
+    <link rel="stylesheet" href="./styles/styleHome.css">
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Link Js Files in Bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Axois Linked -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <title>Furni</title>
+</head>
+
+<body>
+
+
+    <!-- Header Start -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Furni</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end g-2">
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3 active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="icon-header ms-lg-5 d-flex">
+                            <i class="fa-solid fa-user pe-4"></i>
+                            <i class="fa-solid fa-cart-shopping" id="productInCart">
+                                <span id="numOfProductsInCart">0</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Home Start -->
+    <div class="home">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center pt-lg-0 pt-5">
+                <div class="col-lg-5 home-data text-md-center text-lg-start">
+                    <h2>Modern Interior</h2>
+                    <h2 class="mb-4">Design Studio</h2>
+                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                        vulputate velit
+                        imperdiet dolor tempor tristique.</p>
+                    <button type="btn" class="btn me-3 rounde">Shop Now</button>
+                    <button type="btn" class="btn">Explore</button>
+                </div>
+                <div class="col-lg-7 home-img">
+                    <img src="./images/couch.png" alt="Couch Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home End -->
+
+    <!-- Shop Start -->
+    <div class="shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="box text-start">
+                        <h4>Crafted with excellent material.</h4>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
+                            velit imperdiet dolor tempor tristique.</p>
+                        <button type="btn" class="btn btn-dark">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="overlay">
+                            <a href="shop.html"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                        <img src="./images/image30.png" alt="" class="mb-2">
+                        <h5 class="mb-2">Classic Wooden Chair</h5>
+                        <h6>$50.00</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="overlay">
+                            <a href="shop.html"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                        <img src="./images/image28.png" alt="" class="mb-2">
+                        <h5 class="mb-2">Modern Office Chair</h5>
+                        <h6>$50.00</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="overlay">
+                            <a href="shop.html"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                        <img src="./images/image29.png" alt="" class="mb-2">
+                        <h5 class="mb-2">Relaxed Recliner</h5>
+                        <h6>$50.00</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop End -->
+    <!-- Choose Us Start -->
+    <div class="choose">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6 data">
+                    <h2 class="pb-3">Why Choose Us</h2>
+                    <p class="pb-5">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                        vulputate
+                        velit imperdiet dolor tempor tristique.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-truck"></i>
+                            <div class="col-data">
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <div class="col-data">
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-regular fa-life-ring"></i>
+                            <div class="col-data">
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <div class="col-data">
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 img">
+                    <img src="./images/why-choose-us-img.jpg" class="mx-auto mx-lg-0 ms-lg-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Choose Us End -->
+    <!-- Modern Design Start -->
+    <div class="modern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="img">
+                        <div class="row column-gap-1">
+                            <div class="col-md-5 first">
+                                <img src="./images/img-grid-1.jpg" alt="">
+                            </div>
+                            <div class="col-md-5 second">
+                                <img src="./images/img-grid-2.jpg" alt="">
+                                <img src="./images/img-grid-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 data">
+                    <div class="header-data">
+                        <h2 class="pb-2">We Help You Make Modern Interior Design</h2>
+                        <p class="pb-2">
+                            Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada.
+                            Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada.
+                        </p>
+                    </div>
+
+                    <div class="row features">
+                        <div class="col-lg-6">
+                            <p>Donec vitae odio quis nisl dapibus malesuada</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Donec vitae odio quis nisl dapibus malesuada</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Donec vitae odio quis nisl dapibus malesuada</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Donec vitae odio quis nisl dapibus malesuada</p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-dark mt-4 rounded-pill p-3">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Design End -->
+    <!-- info Start -->
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 box">
+                    <img src="images/image30.png" alt="">
+                    <div class="info-data">
+                        <h6>Nordic Chair</h6>
+                        <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                        <a href="shop.html">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 box">
+                    <img src="images/image28.png" alt="">
+                    <div class="info-data">
+                        <h6>Nordic Chair</h6>
+                        <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                        <a href="shop.html">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 box">
+                    <img src="images/image29.png" alt="">
+                    <div class="info-data">
+                        <h6>Nordic Chair</h6>
+                        <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                        <a href="shop.html">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- info End -->
+    <!-- Testimonials Start -->
+    <div class="testimonials py-5">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide text-center">
+                <div class="carousel-indicators mt-5">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="mb-4">Testimonials</h2>
+                        <p class="testimonial-text">
+                            “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                            malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                            tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. Integer convallis volutpat dui quis scelerisque.”
+                        </p>
+                        <img src="./images/person-1.png" alt="Mariam Mohamed" class="rounded-circle mb-3" width="80"
+                            height="80">
+                        <h5 class="mb-0">Mariam Mohamed</h5>
+                        <p class="text-muted">CEO, Co-Founder, XYZ Inc.</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="mb-4">Testimonials</h2>
+                        <p class="testimonial-text">
+                            “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                            malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                            tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. Integer convallis volutpat dui quis scelerisque.”
+                        </p>
+                        <img src="./images/person-1.png" alt="Mariam Mohamed" class="rounded-circle mb-3" width="80"
+                            height="80">
+                        <h5 class="mb-0">Mariam Mohamed</h5>
+                        <p class="text-muted">CEO, Co-Founder, XYZ Inc.</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="mb-4">Testimonials</h2>
+                        <p class="testimonial-text">
+                            “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                            malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                            tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. Integer convallis volutpat dui quis scelerisque.”
+                        </p>
+                        <img src="./images/person-1.png" alt="Mariam Mohamed" class="rounded-circle mb-3" width="80"
+                            height="80">
+                        <h5 class="mb-0">Mariam Mohamed</h5>
+                        <p class="text-muted">CEO, Co-Founder, XYZ Inc.</p>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="custom-icon"><i class="fas fa-chevron-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="custom-icon"><i class="fas fa-chevron-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Recent Blog Start -->
+        <div class="blog">
+            <div class="container">
+                <div class="blog-header pb-5">
+                    <h2>Recent Blog</h2>
+                    <a href="shop.html">Veiw All Posts</a>
+                </div>
+                <div class="blog-data pb-5 text-start">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <img src="./images/post-1.jpg" alt="post 1">
+                            <h5 class="pt-2">First Time Home Owner Idease</h5>
+                            <p><span>by</span> Kristin Watson <span>on</span> Dec 19, 2021</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="./images/post-2.jpg" alt="post 1">
+                            <h5 class="pt-2">First Time Home Owner Idease</h5>
+                            <p><span>by</span> Kristin Watson <span>on</span> Dec 19, 2021</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="./images/post-3.jpg" alt="post 1">
+                            <h5 class="pt-2">First Time Home Owner Idease</h5>
+                            <p><span>by</span> Kristin Watson <span>on</span> Dec 19, 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Blog End -->
+    </div>
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 subscribe">
+                    <div class="subscripe-header">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Subscribe to Newsletter</h3>
+                    </div>
+                    <div class="subscripe-form">
+                        <input type="text" name="name" placeholder="Enter Name">
+                        <input type="email" name="email" placeholder="Enter Email">
+                        <button class="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 img-footer">
+                    <img src="./images/sofa.png" alt="sofa">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Linkes Start -->
+            <div class="linkes pb-3">
+                <div class="container">
+                    <h2>Furni</h2>
+                    <div class="row">
+                        <div class="col-lg-4 linkes-data">
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                                tristique. Pellentesque habitant</p>
+                            <div class="icons">
+                                <ul>
+                                    <li><a href="https://www.facebook.com" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.twitter.com" target="_blank"><i
+                                                class="fab fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 linkes-page">
+                            <ul>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Blogs</a></li>
+                                <li><a href="">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 linkes-page">
+                            <ul>
+                                <li><a href="">Support</a></li>
+                                <li><a href="">Knowledge base</a></li>
+                                <li><a href="">Live chat</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 linkes-page">
+                            <ul>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">Our team</a></li>
+                                <li><a href="">Leaderships</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 linkes-page">
+                            <ul>
+                                <li><a href="">Nordic Chair</a></li>
+                                <li><a href="">Kruzo Aero</a></li>
+                                <li><a href="">Ergonomic Chair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Linkes End -->
+            <!-- CopyRight Start -->
+            <div class="copyright pt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 copyright-data">
+                            <p>Copyright &copy; 2025. All Rights Reserved. — Designed with love by Untree.co Distributed By</p>
+                            <h6>ThemeWagon</h6>
+                        </div>
+                        <div class="col-md-6 copyright-linkes">
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRight End -->
+    <!-- Footer End -->
+    <!-- Testimonials End -->
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

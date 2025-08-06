@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style File -->
+    <link rel="stylesheet" href="./styles/styleBlog.css">
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Link Js Files in Bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Axois Linked -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <title>Furni - Blog</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Furni</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end g-2">
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3 active" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="icon-header ms-lg-5 d-flex">
+                            <i class="fa-solid fa-user pe-4"></i>
+                            <i class="fa-solid fa-cart-shopping" id="productInCart">
+                                <span id="numOfProductsInCart">0</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Blog Hero Section Start -->
+    <div class="blog-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Our Blog</h1>
+                    <p class="lead mb-4">Discover the latest trends in interior design, furniture styling tips, and inspiration for creating beautiful spaces. Stay updated with our expert insights and creative ideas.</p>
+                    <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search articles...">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/blog-hero.jpg" alt="Blog" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Hero Section End -->
+
+    <!-- Featured Posts Section Start -->
+    <div class="featured-posts py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Featured Posts</h2>
+                    <p class="lead">Latest insights and inspiration</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="featured-post">
+                        <img src="./images/blog1.jpg" alt="Featured Post" class="img-fluid rounded">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="category">Interior Design</span>
+                                <span class="date">March 15, 2024</span>
+                            </div>
+                            <h3 class="fw-bold">10 Essential Tips for Modern Living Room Design</h3>
+                            <p>Transform your living room into a modern, comfortable space with these essential design tips. From furniture placement to color schemes, discover how to create a room that's both stylish and functional.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="sidebar-posts">
+                        <div class="sidebar-post mb-4">
+                            <img src="./images/blog2.jpg" alt="Sidebar Post" class="img-fluid rounded">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="category">Furniture</span>
+                                    <span class="date">March 12, 2024</span>
+                                </div>
+                                <h5 class="fw-bold">Choosing the Perfect Dining Table</h5>
+                                <p>Find the ideal dining table that fits your space and lifestyle...</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="sidebar-post">
+                            <img src="./images/blog3.jpg" alt="Sidebar Post" class="img-fluid rounded">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="category">Styling</span>
+                                    <span class="date">March 10, 2024</span>
+                                </div>
+                                <h5 class="fw-bold">Color Psychology in Home Decor</h5>
+                                <p>Understanding how colors affect mood and atmosphere...</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Posts Section End -->
+
+    <!-- Blog Categories Section Start -->
+    <div class="blog-categories py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Browse by Category</h2>
+                    <p class="lead">Find content that interests you</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Interior Design</h4>
+                        <p>Expert tips and trends for beautiful interiors</p>
+                        <span class="post-count">24 articles</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-couch fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Furniture Guide</h4>
+                        <p>How to choose and style furniture pieces</p>
+                        <span class="post-count">18 articles</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-palette fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Color & Style</h4>
+                        <p>Color schemes and styling inspiration</p>
+                        <span class="post-count">15 articles</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">DIY & Tips</h4>
+                        <p>Creative DIY projects and helpful tips</p>
+                        <span class="post-count">12 articles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Categories Section End -->
+
+    <!-- Recent Posts Section Start -->
+    <div class="recent-posts py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Recent Posts</h2>
+                    <p class="lead">Stay updated with our latest content</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog4.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">Interior Design</span>
+                                <span class="date">March 8, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">Small Space, Big Style</h5>
+                            <p>Maximize your small space with clever design solutions and furniture choices that make every square foot count.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog5.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">Furniture</span>
+                                <span class="date">March 5, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">Sustainable Furniture Choices</h5>
+                            <p>Eco-friendly furniture options that are both beautiful and environmentally responsible for your home.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog6.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">Styling</span>
+                                <span class="date">March 2, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">Mix and Match Furniture Styles</h5>
+                            <p>Learn how to successfully combine different furniture styles to create a cohesive and interesting space.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog7.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">DIY & Tips</span>
+                                <span class="date">February 28, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">DIY Wall Art Projects</h5>
+                            <p>Create stunning wall art on a budget with these easy DIY projects that will add personality to any room.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog8.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">Interior Design</span>
+                                <span class="date">February 25, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">Creating a Cozy Bedroom</h5>
+                            <p>Transform your bedroom into a peaceful retreat with these cozy design elements and furniture choices.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog9.jpg" alt="Blog Post" class="img-fluid rounded">
+                        <div class="card-body">
+                            <div class="post-meta">
+                                <span class="category">Color & Style</span>
+                                <span class="date">February 22, 2024</span>
+                            </div>
+                            <h5 class="fw-bold">2024 Color Trends</h5>
+                            <p>Discover the hottest color trends for 2024 and how to incorporate them into your home decor.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Posts Section End -->
+
+    <!-- Newsletter Section Start -->
+    <div class="newsletter py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Subscribe to Our Newsletter</h3>
+                    <p class="mb-0">Get the latest design tips, trends, and inspiration delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newsletter-form">
+                        <input type="email" class="form-control mb-3" placeholder="Enter your email">
+                        <button class="btn btn-light w-100">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Furni</h5>
+                    <p>Creating beautiful spaces for beautiful lives.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Furni. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Linke File -->
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html> 

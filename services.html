@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style File -->
+    <link rel="stylesheet" href="./styles/styleServices.css">
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Link Js Files in Bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Axois Linked -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <title>Furni - Services</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Furni</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end g-2">
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3 active" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-lg-4 ms-lg-3" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="icon-header ms-lg-5 d-flex">
+                            <i class="fa-solid fa-user pe-4"></i>
+                            <i class="fa-solid fa-cart-shopping" id="productInCart">
+                                <span id="numOfProductsInCart">0</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Services Hero Section Start -->
+    <div class="services-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Our Services</h1>
+                    <p class="lead mb-4">We offer comprehensive furniture and home decor services to help you create the perfect space. From consultation to installation, we're here to make your vision a reality.</p>
+                    <button class="btn btn-primary btn-lg">Get Started</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/services-hero.jpg" alt="Our Services" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Hero Section End -->
+
+    <!-- Main Services Section Start -->
+    <div class="main-services py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">What We Offer</h2>
+                    <p class="lead">Comprehensive solutions for your home</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Interior Design Consultation</h4>
+                        <p>Our expert designers work with you to understand your style, needs, and budget to create a personalized design plan for your space.</p>
+                        <ul class="service-features">
+                            <li>Personalized design consultation</li>
+                            <li>Space planning and layout</li>
+                            <li>Color scheme and material selection</li>
+                            <li>3D visualization</li>
+                        </ul>
+                        <button class="btn btn-outline-primary mt-3">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-truck fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Delivery & Installation</h4>
+                        <p>Professional delivery and installation services ensure your furniture is properly placed and assembled in your home.</p>
+                        <ul class="service-features">
+                            <li>White glove delivery service</li>
+                            <li>Professional assembly</li>
+                            <li>Old furniture removal</li>
+                            <li>Post-installation inspection</li>
+                        </ul>
+                        <button class="btn btn-outline-primary mt-3">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Custom Furniture</h4>
+                        <p>Create one-of-a-kind pieces that perfectly fit your space and style with our custom furniture design and manufacturing services.</p>
+                        <ul class="service-features">
+                            <li>Custom design consultation</li>
+                            <li>Premium materials selection</li>
+                            <li>Handcrafted construction</li>
+                            <li>Quality assurance</li>
+                        </ul>
+                        <button class="btn btn-outline-primary mt-3">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Services Section End -->
+
+    <!-- Additional Services Section Start -->
+    <div class="additional-services py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Additional Services</h2>
+                    <p class="lead">Specialized solutions for every need</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="service-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="fas fa-paint-brush fa-2x text-primary mb-3"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="fw-bold">Furniture Restoration</h5>
+                                <p>Breathe new life into your favorite pieces with our expert restoration services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="service-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="fas fa-couch fa-2x text-primary mb-3"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="fw-bold">Upholstery Services</h5>
+                                <p>Custom upholstery to match your style and extend the life of your furniture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="service-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="fas fa-lightbulb fa-2x text-primary mb-3"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="fw-bold">Lighting Design</h5>
+                                <p>Create the perfect ambiance with our professional lighting design services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="service-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="fw-bold">Warranty & Support</h5>
+                                <p>Comprehensive warranty coverage and ongoing support for all our products and services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Services Section End -->
+
+    <!-- Pricing Section Start -->
+    <div class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Service Packages</h2>
+                    <p class="lead">Choose the perfect plan for your needs</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="fw-bold">Basic</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/consultation</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Initial consultation</li>
+                                <li>Basic space planning</li>
+                                <li>Product recommendations</li>
+                                <li>Email support</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <h4 class="fw-bold">Professional</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">299</span>
+                                <span class="period">/project</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full design consultation</li>
+                                <li>3D visualization</li>
+                                <li>Product sourcing</li>
+                                <li>Installation coordination</li>
+                                <li>Priority support</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="fw-bold">Premium</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">599</span>
+                                <span class="period">/project</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Complete design service</li>
+                                <li>Custom furniture design</li>
+                                <li>Project management</li>
+                                <li>Post-completion support</li>
+                                <li>Dedicated designer</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Section End -->
+
+    <!-- CTA Section Start -->
+    <div class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Ready to Transform Your Space?</h3>
+                    <p class="mb-0">Contact us today to schedule your consultation and start creating the home of your dreams.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg">Get Started Today</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Furni</h5>
+                    <p>Creating beautiful spaces for beautiful lives.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Furni. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Linke File -->
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html> 

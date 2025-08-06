@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "name": "Boho Rattan Sofa",
+        "price": 420,
+        "image": "images/image1.webp",
+        "description": "Cozy sofa with warm earthy tones",
+        "stock": 15,
+        "totalPrice": 420,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 2,
+        "name": "Minimalist Wood Chair",
+        "price": 320,
+        "image": "images/image2.webp",
+        "description": "Minimal design with natural textures",
+        "stock": 7,
+        "totalPrice": 320,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 3,
+        "name": "Mid-century Armchair",
+        "price": 580,
+        "image": "images/image3.webp",
+        "description": "Elegant armchair with modern look",
+        "stock": 12,
+        "totalPrice": 580,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 4,
+        "name": "Scandinavian Lounge Chair",
+        "price": 610,
+        "image": "images/image4.webp",
+        "description": "Comfortable chair with soft cushions",
+        "stock": 20,
+        "totalPrice": 610,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 5,
+        "name": "Industrial Office Chair",
+        "price": 480,
+        "image": "images/image5.webp",
+        "description": "Wooden furniture with clean lines",
+        "stock": 9,
+        "totalPrice": 480,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 6,
+        "name": "Modern Swivel Chair",
+        "price": 540,
+        "image": "images/image6.webp",
+        "description": "Light-filled space with calm tones",
+        "stock": 14,
+        "totalPrice": 540,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 7,
+        "name": "Contemporary Recliner",
+        "price": 730,
+        "image": "images/image7.webp",
+        "description": "Stylish seating with compact frame",
+        "stock": 6,
+        "totalPrice": 730,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 8,
+        "name": "Rustic Dining Chair",
+        "price": 390,
+        "image": "images/image8.jpg",
+        "description": "Earthy palette and woven details",
+        "stock": 11,
+        "totalPrice": 390,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 9,
+        "name": "Vintage Accent Chair",
+        "price": 460,
+        "image": "images/image9.jpg",
+        "description": "Modern workspace with green accents",
+        "stock": 13,
+        "totalPrice": 460,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 10,
+        "name": "Classic Leather Sofa",
+        "price": 870,
+        "image": "images/image10.jpg",
+        "description": "Neutral colors and natural materials",
+        "stock": 8,
+        "totalPrice": 870,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 11,
+        "name": "Cozy Wool Armchair",
+        "price": 520,
+        "image": "images/image11.jpg",
+        "description": "Plush cushions and cozy feel",
+        "stock": 17,
+        "totalPrice": 520,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 12,
+        "name": "Elegant Velvet Chair",
+        "price": 640,
+        "image": "images/image12.jpg",
+        "description": "Sleek design with soft fabric",
+        "stock": 10,
+        "totalPrice": 640,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 13,
+        "name": "Compact Study Chair",
+        "price": 310,
+        "image": "images/image13.jpg",
+        "description": "Perfect for study or work",
+        "stock": 16,
+        "totalPrice": 310,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 14,
+        "name": "Plush Recliner",
+        "price": 780,
+        "image": "images/image14.jpg",
+        "description": "Relaxing and comfy recliner",
+        "stock": 5,
+        "totalPrice": 780,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 15,
+        "name": "Wooden Rocking Chair",
+        "price": 450,
+        "image": "images/image15.jpg",
+        "description": "Classic rocking chair design",
+        "stock": 14,
+        "totalPrice": 450,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 16,
+        "name": "Fabric Dining Chair",
+        "price": 350,
+        "image": "images/image16.jpg",
+        "description": "Soft and supportive seating",
+        "stock": 19,
+        "totalPrice": 350,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 17,
+        "name": "Ergonomic Office Chair",
+        "price": 700,
+        "image": "images/image17.jpg",
+        "description": "Ergonomic and stylish",
+        "stock": 7,
+        "totalPrice": 700,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 18,
+        "name": "Luxury Lounge Sofa",
+        "price": 950,
+        "image": "images/image18.jpg",
+        "description": "Luxurious and spacious sofa",
+        "stock": 4,
+        "totalPrice": 950,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 19,
+        "name": "Retro Accent Chair",
+        "price": 440,
+        "image": "images/image19.jpg",
+        "description": "Retro style with charm",
+        "stock": 18,
+        "totalPrice": 440,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 20,
+        "name": "Casual Armchair",
+        "price": 330,
+        "image": "images/image20.jpg",
+        "description": "Casual and inviting chair",
+        "stock": 20,
+        "totalPrice": 330,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 21,
+        "name": "Stylish Side Chair",
+        "price": 370,
+        "image": "images/image21.jpg",
+        "description": "Modern side chair design",
+        "stock": 12,
+        "totalPrice": 370,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 22,
+        "name": "Adjustable Swivel Chair",
+        "price": 560,
+        "image": "images/image22.jpg",
+        "description": "Swivel base for convenience",
+        "stock": 9,
+        "totalPrice": 560,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 23,
+        "name": "Comfortable Reading Chair",
+        "price": 480,
+        "image": "images/image23.png",
+        "description": "Great for reading nook",
+        "stock": 15,
+        "totalPrice": 480,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 24,
+        "name": "Sleek Dining Chair",
+        "price": 400,
+        "image": "images/image24.png",
+        "description": "Simple and elegant dining chair",
+        "stock": 14,
+        "totalPrice": 400,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 25,
+        "name": "Soft Cushion Chair",
+        "price": 360,
+        "image": "images/image25.png",
+        "description": "Soft cushions for comfort",
+        "stock": 16,
+        "totalPrice": 360,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 26,
+        "name": "Designer Lounge Chair",
+        "price": 680,
+        "image": "images/image26.png",
+        "description": "Designer look and feel",
+        "stock": 11,
+        "totalPrice": 680,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 27,
+        "name": "Relaxed Recliner",
+        "price": 720,
+        "image": "images/image27.png",
+        "description": "Relaxed and comfy",
+        "stock": 7,
+        "totalPrice": 720,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 28,
+        "name": "Vintage Fabric Chair",
+        "price": 430,
+        "image": "images/image28.png",
+        "description": "Vintage style fabric cover",
+        "stock": 13,
+        "totalPrice": 430,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 29,
+        "name": "Modern Office Chair",
+        "price": 650,
+        "image": "images/image29.png",
+        "description": "Modern office chair",
+        "stock": 8,
+        "totalPrice": 650,
+        "numOfItemInCart": 1
+    },
+    {
+        "id": 30,
+        "name": "Classic Wooden Chair",
+        "price": 370,
+        "image": "images/image30.png",
+        "description": "Classic wooden frame",
+        "stock": 10,
+        "totalPrice": 370,
+        "numOfItemInCart": 1
+    }
+]
