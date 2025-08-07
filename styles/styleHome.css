@@ -260,7 +260,6 @@ body {
 .choose .container>.row .img {
     display: flex;
     justify-content: flex-end;
-    padding: 0 !important;
 }
 
 .choose .container>.row .img img {
@@ -270,6 +269,11 @@ body {
     width: auto;
     max-width: 100%;
     border-radius: 15px;
+}
+@media (max-width: 992px) {
+    .choose .container>.row .img {
+        max-width:100%
+    }
 }
 
 /* Choose Us End */
@@ -636,7 +640,6 @@ body {
 @media (max-width:576px) {
     .copyright .container .copyright-linkes   {
         justify-content: center;
-        background-color: red;
     }
 }
 /* CopyRight End */
