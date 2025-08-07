@@ -95,8 +95,13 @@ body {
 
 /* Home Start */
 .home {
-    height: calc(100vh - 79px);
+    min-height: calc(100vh - 79px);
     background-color: var(--main-color);
+}
+@media (max-width:992px) {
+    .home {
+        padding: 50px 0;
+    }
 }
 .home .container{
     height: 100% !important;
@@ -106,6 +111,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .home .carousel {
@@ -125,6 +131,7 @@ body {
     justify-content: center;
     height: 100%;
     padding-left: 30px;
+    text-align: center;
 }
 .home-content img {
     border-radius: 8px;
@@ -145,12 +152,19 @@ body {
 }
 
 .home-content .btn {
+    width: fit-content;
+    margin: auto;
     background-color: var(--btn-color);
     color: #000;
-    padding: 12px 25px;
+    padding: 12px 40px;
     border: none;
     font-weight: bold;
     transition: var(--main-transtion);
+}
+@media (max-width:992px) {
+    .home-content .btn {
+        width: 100%;
+    }
 }
 
 .home-content .btn:hover {
